@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Intro to Proramming Important Concepts</title>
+<link rel="stylesheet" href="eric-style.css">
+</head>
+
+<body>
+<div class="session">Session 1: Webpages, Documents, and Structure</div>
+
+  <div class="lesson">
+  <h1 class="lesson-heading"> Basics of the Web and HTML</h1>  
+    <div class="content">
+      <h2>The Worldwide Web</h2>
+    
+        <ul><li>What makes up the entire worldwide web is a collection of <span class="key-term">HTML</span> documents linked together and linked to other files such as videos, text, images, and music</li>
+        <li><span class="key-term">HTML</span> (HyperText Markup Language) is the glue that holds the web together</li>
+        <li>Connections between pages are called <span class="key-term">HYPERLINKS</span> which is what makes the web, weblike</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Structure of the Web</h2>
+
+      <div class="subtitle">There are 4 major components to the web as we know it today.</div>
+      <ol>
+            <li> <span class="key-term">Browsers</span> make the web viewable from a personal computer and is that space where users experience the web</li>
+            <li> <span class="key-term">HTTP</span> (HyperText Transfer Protocol) is the main protocol of the web which allows for the exchange or transfer of hypertext via hyperlinks</li>
+            <li> <span class="key-term">The Internet (Cloud)</span> is the world's largest computer network</li>
+            <li> <span class="key-term">Servers</span> are stacked computers that host files and html documents that make up the web</li>
+            </ol>
+    </div>
+
+    <div class="content">
+      <h2>What makes up HTML?</h2>
+
+      <div class="subtitle">There are  4 different components of <span class="key-term">HTML</span>.</div>
+      <ol><li>Text Content (what you see)</li>
+      <li><span class="key-term">Markup</span> (what it looks like)</li>
+      <li>References to other documents e.g. videos, images</li>
+      <li>Links to other pages</li>
+      </ol>
+      
+    </div>
+
+    <div class="content">
+      <h2>What is HTML Markup?</h2>
+
+      <p class="text">Html Markup is made up of <span class="key-term">ELEMENTS</span> that typically contain three parts listed below.</p>
+      <ul><li><span class="key-term">Opening Tag</span> which is listed inside brackets sideways carrot brackets like- &lt; &gt;</li>
+      <li><span class="key-term">Contents</span> are in between tags</li>
+      <li><span class="key-term">Closing Tag</span> is listed inside brackets with an additional slash inside like- &lt;/ &gt;</li>
+      </ul>
+      
+      <p class="text">Examples of Tags (note: some tags are "void" tags and don't need a closing tag)</p>
+      <ul><li>b - bold</li>
+      <li>em - emphasis (italics)</li>
+      <li>a - anchor (for making links)</li>
+      <li>img - image, attribute is src - source (url) and alt - text displays when the server fails to load the page</li>
+      <li>br - line break (void tag - no closing tag)</li>
+      <li>p - paragraph</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Element Attributes</h2>
+          
+          <p class="text"><span class="key-term">Attributes</span> are a property of an <span class="key-term">Element</span> that modifys it e.g. href, src, title, etc. <span class="key-term">Attributes</span> are always specified in the start tag and come in name/value pairs like: name = "value"</p>
+    </div>
+    <div class="content">
+      <h2>Inline vs. Block Elements</h2>
+        <ul><li>Inline Element - functions in line with the text - e.g. span, strong, img, a, br</li>
+        <li>Block Element - actually creates a invisible box that can be modified heighth and width - e.g. div, p, form</li>
+        </ul>
+    </div>
+  </div>
+  
+  
+  <div class="lesson"> 
+  <h1 class="lesson-heading">Making an HTML Structured Document</h1>
+
+    <div class="content">  
+    <h2>House Analogy</h2>    
+      <p class="text"><span class="key-term">HTML</span> is the structure of a  website, while <span class="key-term">CSS</span> is the interior decorations and <span class="key-term">Java Script</span> is the mechanical parts like a garage door.</p>
+    </div>
+    <div class="content">
+    <h2>"Boxifying" is Key</h2>
+
+          <p class="text">Everything in <span class="key-term">HTML</span> can be divided into boxes that can be nested inside of other boxes which allows us to create the structure needed. When a front end web developer gets a design for a webpage from a designer the first step is to identify and outline all the boxes on the page, this is what is meant by <span class="key-term">"Boxifying."</span></p>
+    </div>
+    <div class="content">
+    <h2>Need Feedback? - Use a Text Editor</h2>
+
+          <p class="text">Text editors (e.g. Sublime Text) help programmers by doing certain things automatically like displaying exactly what the code that is written looks like and/or gererating closing tags automatically.</p>
+    </div>
+    <div class="content">
+    <h2>Need More Feedback? - Use Developer Tools</h2>
+
+          <p class="text">Developer Tools deliver immediate visual feedback about the structure and design of a given page. They also teach us about the nested nature of the code and show us the proper way to indent code we write for ease of reading and editing later on.</p>
+    </div>
+  </div>
+  <div class="lesson"> 
+  <h1 class="lesson-heading">How CSS Helps Avoid Repetition</h1>
+
+    <div class="content">  
+    <h2>CSS Defined</h2>    
+      <p class="text"><span class="key-term">CSS</span> (Cascading Style Sheets) defines how elements are to be displayed and reduces work by keeping developers from having to repeat adding style code to each individual element in html. <span class="key-term">CSS</span> code is usually stored in separate files with the file extension .css and is linked in the header of the <span class="key-term">HTML</span> document.</p>
+    </div>
+    
+    <div class="content">
+    <h2>Cascading Nature of CSS</h2>
+
+          <p class="text"><span class="key-term">Inheritance</span> is a key property of <span class="key-term">CSS</span> to reduce workload and reduce errors when editing code. <span class="key-term">Inheritance</span> relys on the document structure where parent elements pass on certain traits to child elements such as font, color, or letter spacing. In general only text-related properties can be inherited as opposed to box-related properties (e.g. padding, or margin) This concept helps to avoid errors from repeating steps and also creates consistency in the style of the webpage.</p>
+    </div>
+    <div class="content">
+    <h2>CSS Identifiers</h2>
+
+          <p class="text"><span class="key-term">Identifiers</span> allow for us to specify which <span class="key-term">HTML</span> elements we want to modify and again help us to make consistency in the style of the page and to reduce errors when writing and editing code. One example of this is if we want to reference an element from our <span class="key-term">HTML</span> we specify the element and inside brackets we can change properties of the element like this: h1{...inside here we adjust properties of this element...} Inside the brackets the change to a property of the element is specified like: name: value; (e.g. color: red;)</p>
+    </div>
+  </div>
+  <div class="session">Session 2: Telling Computers What to Do</div>
+
+  <div class="lesson">
+  <h1 class="lesson-heading">Intro to Serious Programming</h1>  
+    <div class="content">
+      <h2>Computers</h2>
+        <p>A <a href="http://en.wikipedia.org/wiki/Computer">Computer</a> is a machine or device that can execute a program or a set of logical steps or commands. Without the program a computer is basically useless.</p>
+    
+        
+    </div>
+
+    <div class="content">
+      <h2>Computer Program</h2>
+        <p>Since computers are stupid we have to use technological empathy and write <a href="http://en.wikipedia.org/wiki/Computer_program">programs</a> that describe a very specific sequence of steps that can be executed mechanically and without any thought.</p>
+    </div>
+
+    <div class="content">
+      <h2>Programming Language</h2>
+        <p>A <a href="http://en.wikipedia.org/wiki/Programming_language">programming language</a> is a language that computer programmers use to tell the computer what to do. We use a different language for computers because in our language there is a lot of ambiguity. For expample when I use the word "biweekly," I could mean every two weeks or I could mean twice a week. Also, natural languages are very verbose, meaning they use a lot of words of phrases to express a simple concept. In order to simplify writing and reading programs a new language is essential. A good programming language is easy for computers as well as humans to understand.</p>
+    </div>
+
+    <div class="content">
+      
+      <h2>Python</h2>
+        <p><a href="http://en.wikipedia.org/wiki/Python_(programming_language)">Python</a> is an example of a programming language. When we write Python code we can input it into a Python Interpreter, which is a computer program that tells the computer how to interpret the code that we have just written.</p>
+    </div>
+    <div class="content">
+      <h2>Grammar</h2>
+        <p>Much like in English or any other natural language there are rules for how the language can be constructed in order to make sense and although we as humans can violate this structure and probably still understand each other, for example I could say, "Food want" which is not grammatically correct, but would be understood by most people that I want food. Grammars for programming languages are different in that if you violate the grammar you will get an error when trying to run your program and it won't work.</p>
+    </div>
+
+    <div class="content">
+      <h2>Python Expression</h2>
+        <p>A valid expression will follow the rules of the grammar and generate a value. Expressions can also be replaced by other expressions which can produce a recursive definition. Here is a <a href="https://www.udacity.com/course/viewer#!/c-cs101/l-48299949/e-48704311/m-48736065">video</a> for examples of expressions.</p>
+    </div>
+  </div>
+  <div class="lesson">
+  <h1 class="lesson-heading"> Variables and Strings </h1> 
+    <div class="content">
+    <h2>
+        Variable
+    </h2>
+    <p>
+        We use variables to create a name and to assign that name a value. In Python when we use the equals sign, it does not mean it does not mean equal, it means assignment. The format is: Name = Expression, for example: number = 8 * 5. Another way to think of this is that now the name refers to that value is was assigned and we use an arrow to represent this relationship. It is also important to note that variables can vary and they can change value throughout the program, so they may not refer to the same value at all times.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        Strings
+    </h2>
+    <p>
+        In the early days of computers people thought of computers as just large calculators that could do big computations, but it turns out computers anc operate on any data structure available. A string is an example of this type of data. A string is a sequence of characters surrounded by quotes. For example: "I like cookies". We can actually use the double quotes or the single quotes, but we just have to start and end with the same type. With strings it is important that we know that the operators work differently than with numbers and variables. For example the plus operator does not mean plus, but instead concatenation.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        Indexing Strings
+    </h2>
+    <p>
+        With strings we have a unique ability to extract a subsequence of characters and this is what is meant by indexing. To index a string we have to use square brackets and select the location we want to index. For example: "Eric"[0] --> "E". Also when we use negative numbers that means we start the indexing from the back of the string. For example: "Eric"[-1] --> "c". In addition to selecting an individual character in a string we can also select a sub sequence of a string. The structure for this is as follows: &lt;string&gt;[&lt;expression&gt;:&lt;expression&gt;] where the expressions must be equivant to numbers and the first expression is the start and the second is the end of the sub sequence.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        Finding Strings in Strings
+    </h2>
+    <p>
+        Using find is a built in Python method that work just like a proceedure we can define. It works like: &lt;string&gt;.find(&lt;string&gt;) and the output is the first position of the second input string in the first string. If the target string is not found the value produced is -1. 
+    </p>
+    </div> 
+  </div>
+  <div class="lesson">
+  <h1 class="lesson-heading"> Inputs -> Functions -> Outputs</h1> 
+    <div class="content">
+    <h2>
+        Using Proceedures (Functions)
+    </h2>
+    <p>
+        A proceedure is made like this: &lt;function&gt;(&lt;input&gt;, &lt;input&gt;, ...) and it can have as many inputs as possible. The inputs are sometimes called opperands or arguments as well. There are built in proceedures like find or we can define our own proceedures as well by using a def like this: def &lt;function&gt;(&lt;input&gt;): We can think of our proceedures as mapping inputs to outputs. We also have to make sure to use a return in order to get a result or an output.
+    </p>
+    </div> 
+  </div>
+  <div class="lesson">
+  <h1 class="lesson-heading"> Decisions and Repition: If and While </h1> 
+    <div class="content">
+    <h2>
+        Equality Comparisons
+    </h2>
+    <p>
+        When we make decisions the format of the call is: &lt;number&gt;&lt;operator&gt;&lt;number&gt; and the output is not a number, but a boolean value, which is either true or false. We also need to remember that when we want to compare equality we must use the double equal sign because the single equal means assignment.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        If Statements and Making Decisions
+    </h2>
+    <p>
+        In order to make decisions we can use an if statement to test an expession and evaluate a block of code when the if statement is true and skip the block when it is false. The structure is as follows: if &lt;test expression&gt;: followed by an indented block of code. We can also use an else statement to follow the if to evaluate another block of code when the test expression for the if is false.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        Or
+    </h2>
+    <p>
+        The or operator does what it seems like is should, it evaluates two statements as true or false making the overall condition either true or false. The one thing to remember is that the or operator only evaluates what it needs to be true, so as long as it finds a true value before an error or a false value the overall statement will evaluate to true.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        While Loops
+    </h2>
+    <p>
+        Though we do not need any other constructs to write any program we could want other than, arthmetic, comparisons, proceedures and if, a loop helps us to do repetitive steps over and over more conveniently. The structure of the while statement is similar to the if statement and is as follows: while &lt;test expression&gt;: and below that there is an indented block of code that evaluates while the test expression is true. With the if statement the block evaluates either zero or 1 times, but with while it could evaluate zero to as many times as possible.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        Break Statement
+    </h2>
+    <p>
+        Break statements help us by stoping a while loop even while the test condition is still true. The structure is similare to a while loop, but in the block of code that is evaluated there might be a if statement and a test conditon followed by a break statement. If the test condition is true then we break out of the loop and go to the next line of code outside the loop.
+    </p>
+    </div> 
+  </div>
+  <div class="lesson">
+  <h1 class="lesson-heading"> Structured Data: Lists and For Loops </h1> 
+    <div class="content">
+    <h2>
+        List
+    </h2>
+    <p>
+        Unlike a string which is only limited to a sequence of characters, a list can be a sequence of anything (numbers, strings, or other lists). The format for a list is: &lt;list&gt; --> [&lt;expression&gt;, &lt;expression&gt;, ...].
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        Mutation
+    </h2>
+    <p>
+        Mutation means that we can change the value of a list after we have created it. When we change a string we can only change what the variable is reffering to, we do not actually change the string that that variable refers to. Even when we concatenate a new string to out existing string we are creating a new string and then also creating another new string that is the concatentation of the two strings and then we change what the variable refers to. Conversely, when we select and element in a list by indexing its location we can actually change the value of the element at that position.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        Aliasing
+    </h2>
+    <p>
+        When two variable refer to the same list or value, if the state of that list is changed then both of the variables refer to the new state of the list. If, however, we change what one of the variables refers to entirely then only that one variable changes and the other continues to refer to the other list.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        List Operations
+    </h2>
+    <p>
+        There are many operations we can perform on lists. One opperation is to append, and with this operation we add an element to the end of a list. By doing this we are not creating a new list, we are merely modifying the old list. The format is as follows: &lt;list&gt;.append(&lt;element&gt;). Another operation is the plus operation which works a lot like concatenation in that when you add to lists it forms a new list that contains the elements of both lists. Another operation is length which tells us the length of a list. It is written like this: len(&lt;list&gt;). The output of len is the number of elements in the list and it can work on object that is a collection of things like strings.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        For Loops
+    </h2>
+    <p>
+        This is a new kind of loop that is similar to a while loop only it works on lists. The format is as follows: for &lt;name&gt; in &lt;list&gt;: followed by an indented block of code, where name is a new variable that we can create. The nicer thing about a for loop than a while loop is we do not have to write code to advance the loop, it is done automatically so we cannot forget to advance the loop.
+    </p>
+    </div>
+    <div class="content">
+    <h2>
+        More List Operations
+    </h2>
+    <p>
+        The index function allows us to find a certain value in our list and it returns the location of the first occurence of that value. The format for index is as follows: &lt;list&gt;.index(&lt;value&gt;). If the value passed in is not int he list then the output will be an error. Another set of operators we can use on lists are "in" and "not in" and the result is either true or false. The format for this is: &lt;value&gt; in &lt;list&gt; and &lt;value&gt; not in &lt;list&gt;.
+    </p>
+    </div> 
+  </div>
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+  </p>
+</body>
+</html>
+
+
+
